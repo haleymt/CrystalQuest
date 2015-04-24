@@ -7,7 +7,7 @@
   </head>
   <body align="center">
     <div id="container">
-      <canvas id="game-canvas" width="500" height="500"></canvas>
+      <canvas id="game-canvas" width="780" height="500"></canvas>
       <menu id="controls"></menu>
     </div>
     <script src="keymaster.js"></script>
@@ -24,13 +24,12 @@
     <script src="lib/portal.js"></script>
     <script src="lib/wave.js"></script>
     <script src="lib/introView.js"></script>
-    <script src="lib/gameView.js"></script>
     <script src="lib/game.js"></script>
     <script>
       var canvas = document.getElementById("game-canvas");
       var ctx = canvas.getContext("2d");
       new CrystalQuest.Game(
-        500,
+        780,
         500,
         ctx
       ).run();

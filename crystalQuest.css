@@ -1,5 +1,4 @@
 #container {
-  left: 300px;
   height: 500px;
   position: relative;
   width: 500px;
@@ -12,8 +11,7 @@
 
 #controls {
   bottom: 0;
-  left: 0;
-  margin-left: -30px;
+  left: 100px;
   padding-bottom: 200px;
   position: absolute;
   width: 100%;
