@@ -1,7 +1,8 @@
 #container {
-  height: 500px;
+  height: 550px;
   position: relative;
-  width: 500px;
+  width: 780px;
+  background: black;
 }
 
 /*#game-canvas {
@@ -11,8 +12,29 @@
 
 #controls {
   bottom: 0;
-  left: 100px;
+  left: -30px;
   padding-bottom: 200px;
   position: absolute;
   width: 100%;
+  color: white;
+}
+
+#status-bar {
+  height: 50px;
+  width: 100%;
+  background: black;
+  color: white;
+  border-bottom: 1px solid white;
+  font-size: 20px;
+}
+
+#status-bar ul {
+  margin: 0;
+  padding-top: 20px;
+  list-style-type: none;
+}
+
+#status-bar ul li {
+  display: inline;
+  padding: 10px;
 }
