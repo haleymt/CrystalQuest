@@ -6,10 +6,19 @@
     <script src="./jquery-2.1.1.js"></script>
   </head>
   <body align="center">
-    <div id="container">
-      <div id="status-bar"></div>
-      <canvas id="game-canvas" width="780" height="500"></canvas>
-      <menu id="controls"></menu>
+    <div class="big-container">
+      <div id="container">
+        <div id="status-bar"></div>
+        <canvas id="game-canvas" width="780" height="500"></canvas>
+        <menu id="controls"></menu>
+        <br>
+        <info id="info">
+          <strong>to move the ship:</strong><br>
+          <strong>&#65514; up &#65516; down &#65515; right &#65513; left</strong><br>
+          <strong>'r' to stop</strong><br>
+          <strong>'space' to shoot</strong>
+        </info>
+      </div>
     </div>
     <script src="keymaster.js"></script>
     <script src="lib/utils.js"></script>
@@ -35,11 +44,5 @@
         ctx
       ).run();
     </script>
-    <info id="info">
-      <p><strong>to move the ship:</strong></p>
-      <p><strong>&#65514; up &#65516; down &#65515; right &#65513; left</strong></p>
-      <p><strong>'r' to stop</strong></p>
-      <p><strong>'space' to shoot</strong></p>
-    </info>
   </body>
 </html>
