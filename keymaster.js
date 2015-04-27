@@ -9,13 +9,13 @@
     _scope = 'all',
     // modifier keys
     _MODIFIERS = {
-      '⇧': 16, shift: 16,
       '⌥': 18, alt: 18, option: 18,
       '⌃': 17, ctrl: 17, control: 17,
       '⌘': 91, command: 91
     },
     // special keys
     _MAP = {
+      '⇧': 16, shift: 16,
       backspace: 8, tab: 9, clear: 12,
       enter: 13, 'return': 13,
       esc: 27, escape: 27, space: 32,
