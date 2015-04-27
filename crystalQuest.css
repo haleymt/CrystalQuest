@@ -35,6 +35,18 @@ body {
   color: white;
 }
 
+#controls p {
+  font-family: 'Audiowide', cursive;
+}
+
+#controls h1 {
+  font-family: 'Audiowide', cursive;
+}
+
+#controls button {
+  font-family: 'Press Start 2P', cursive;
+}
+
 #status-bar {
   height: 50px;
   width: 100%;
