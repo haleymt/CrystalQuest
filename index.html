@@ -14,10 +14,20 @@
         <menu id="controls"></menu>
         <br>
         <info id="info">
-          <strong>to move the ship:</strong><br>
-          <strong>&#65514; up &#65516; down &#65515; right &#65513; left</strong><br>
-          <strong>'r' to stop</strong><br>
-          <strong>'space' to shoot, 'enter' to FLASHBOMB</strong>
+          <instructions class="instructions">
+            <strong style="font-size:20px;">Instructions</strong><br>
+            <strong>Collect all the crystals <img src='crystal.png' width="15"> and escape out the gate</strong><br>
+            <strong>Don't run into any aliens <img src='basic_alien.png' width="18"> or asteroids!</strong><br>
+            <strong>Use your cherry bombs to clear the screen <img src='bomb.png' width="15"></strong><br>
+            <strong>Catch the big crystal for a bonus prize</strong>
+          </instructions>
+          <keys class="keys">
+            <strong style="font-size:20px;">Keys</strong><br>
+            <strong>&#65514; up &#65516; down &#65515; right &#65513; left</strong><br>
+            <strong>'r' to stop</strong><br>
+            <strong>'space' to shoot</strong><br>
+            <strong>'enter' to FLASHBOMB</strong><br>
+          </keys>
         </info>
       </div>
     </div>
@@ -40,8 +50,6 @@
     <script src="lib/gate.js"></script>
     <script src="lib/portal.js"></script>
     <script src="lib/wave.js"></script>
-    <script src="lib/introView.js"></script>
-    <script src="lib/highScores.js"></script>
     <script src="lib/game.js"></script>
     <script>
       var canvas = document.getElementById("game-canvas");

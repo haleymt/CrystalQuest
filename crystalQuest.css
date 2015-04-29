@@ -14,7 +14,18 @@ body {
 }
 
 #info {
+  position: relative;
   color: white;
+}
+
+.instructions {
+  padding-left:80px;
+  float: left;
+}
+
+.keys {
+  padding-right:80px;
+  float: right;
 }
 
 #container {
@@ -60,6 +71,7 @@ body {
   color: white;
   border-bottom: 1px solid white;
   font-size: 20px;
+  font-weight: bold;
 }
 
 #status-bar ul {
