@@ -18,14 +18,14 @@ See if you can beat it!
 
 ### Aliens
 
-![Basic Alien](img/basic_alien.png)
-![Shooter Alien](img/shooter_alien.png)
-![Computer Alien](img/computer_alien.png)
-![Blob Alien](img/blob_alien.png)
-![Computer Shooter Alien](img/cs_alien.png)
-![X Shooter Alien](img/x_alien.png)
-![Four Leg Alien](img/four_leg_alien.png)
-![Bullet Alien](img/bullet_alien.png)
+![Basic Alien](img/rm_basic_alien.png)
+![Shooter Alien](img/rm_shooter_alien.png)
+![Computer Alien](img/rm_computer_alien.png)
+![Blob Alien](img/rm_blob_alien.png)
+![Computer Shooter Alien](img/rm_cs_alien.png)
+![X Shooter Alien](img/rm_x_alien.png)
+![Four Leg Alien](img/rm_four_leg_alien.png)
+![Bullet Alien](img/rm_bullet_alien.png)
 
 Each alien changes direction regularly. Accomplishing this requires two parts. First, I have to create a random movement vector for the alien:
 ```javascript
@@ -85,7 +85,7 @@ Game.WAVE_EIGHT = {
     numPoints: 3
   };
 ```
-The array `Game.WAVES` holds all of these objects. The game keeps track of what wave it's on by incrementing a counter that refers to an index in Game.WAVES.
+The array `Game.WAVES` holds all of these objects. The game keeps track of what wave it's on by incrementing a counter that refers to an index in `Game.WAVES`.
 
 ### Intervals
 Javascript's `setInterval` is notoriously tricky. It is strict about scope, it doesn't return any values, and any child `setInterval`s nested inside of another parent `setInterval` will *keep running* even after a parent interval is cleared. This poses potentially huge performance problems. To fix it, I carefully clear any intervals I create throughout the game:
@@ -110,7 +110,7 @@ if (object instanceof CrystalQuest.ShooterAlien) {
 * Upon finishing a level, I iterate through all the remaining aliens, and clear their movement and shooting intervals as well.
 
 ### High Scores
-There are plenty of libraries available to store small amounts of data without relying on large amounts of server-side code. I considered implementing one of these libraries, like Parse.js, but in the end I decided to go for the simplest solution. I could store all of my high scores as a string, which made them a perfect thing to keep in localStorage.
+There are plenty of libraries available to store small amounts of data without relying on large amounts of server-side code. I considered implementing one of these libraries, like Parse.js, but in the end I decided to go for the simplest solution. Because I can store all of my high scores as a string, this makes them a perfect thing to keep in localStorage.
 
 If you're running the game on your own computer for the first time, and not at the live link, it will create an item called `"high-scores"` upon initialization and set it to an empty array:
 ```javascript
