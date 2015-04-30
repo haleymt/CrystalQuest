@@ -1,5 +1,5 @@
 # CrystalQuest
-The classic game designed for the 1987 Macintosh, remade with HTML5 Canvas for the 2015 browser.
+This is a remake of the classic game designed for the 1987 Macintosh. It uses HTML5 Canvas, Sprites, Javascript, and jQuery. 
 
 Crystal Quest features **fifteen** different levels and **eight** different kinds of aliens (so far!). Each alien has its own look, its own dangers, and its own way of moving. Each wave increases in difficulty, and features increasingly perilous foes.
 
@@ -10,10 +10,10 @@ See if you can beat it!
 ### Gameplay
 * Move your ship around using the direction keys
 * Scoop up all the crystals in order to open the gate.
-* Don't run into the aliens, asteroids, or portals or you'll lose a life!
+* Don't run into the aliens, asteroids, or portals or you'll lose a life.
 * Lose all your lives and it's game over.
 * You can use your cherry bombs to clear the screen if you're in danger.
-* If you collect the big crystal you'll gain a life and some bonus points!
+* If you collect the big crystal you'll gain a life and some bonus points.
 * Press the space bar to shoot some aliens.
 
 ### Aliens
@@ -25,7 +25,6 @@ See if you can beat it!
 ![Computer Shooter Alien](img/rm_cs_alien.png)
 ![X Shooter Alien](img/rm_x_alien.png)
 ![Four Leg Alien](img/rm_four_leg_alien.png)
-![Bullet Alien](img/rm_bullet_alien.png)
 
 Each alien changes direction regularly. Accomplishing this requires two parts. First, I have to create a random movement vector for the alien:
 ```javascript
