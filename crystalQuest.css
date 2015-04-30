@@ -60,6 +60,12 @@ body {
   font-family: 'Audiowide', cursive;
 }
 
+#controls h2,
+#controls h3 {
+  font-family: 'Audiowide', cursive;
+  color: rgb(255, 204, 0);
+}
+
 #controls button {
   font-family: 'Press Start 2P', cursive;
 }
