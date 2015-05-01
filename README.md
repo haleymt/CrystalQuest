@@ -1,5 +1,5 @@
 # CrystalQuest
-This is a remake of the classic game designed for the 1987 Macintosh. It uses HTML5 Canvas, Sprites, Javascript, and jQuery. 
+This is a remake of the classic game designed for the 1987 Macintosh. It uses HTML5 Canvas, Sprites, Javascript, and jQuery.
 
 Crystal Quest features **fifteen** different levels and **eight** different kinds of aliens (so far!). Each alien has its own look, its own dangers, and its own way of moving. Each wave increases in difficulty, and features increasingly perilous foes.
 
@@ -109,7 +109,7 @@ if (object instanceof CrystalQuest.ShooterAlien) {
 * Upon finishing a level, I iterate through all the remaining aliens, and clear their movement and shooting intervals as well.
 
 ### High Scores
-There are plenty of libraries available to store small amounts of data without relying on large amounts of server-side code. I considered implementing one of these libraries, like Parse.js, but in the end I decided to go for the simplest solution. Because I can store all of my high scores as a string, this makes them a perfect thing to keep in localStorage.
+For now, high scores are stored in the localStorage and not in a database.
 
 If you're running the game on your own computer for the first time, and not at the live link, it will create an item called `"high-scores"` upon initialization and set it to an empty array:
 ```javascript
