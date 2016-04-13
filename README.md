@@ -111,7 +111,7 @@ if (object instanceof CrystalQuest.ShooterAlien) {
 ### High Scores
 For now, high scores are stored in the localStorage and not in a database.
 
-If you're running the game on your own computer for the first time, and not at the live link, it will create an item called `"high-scores"` upon initialization and set it to an empty array:
+If you're running the game for the first time, it will create an item called `"high-scores"` upon initialization and set it to an empty array:
 ```javascript
 Game.prototype.run = function () {
   if (this.scores === null) {
