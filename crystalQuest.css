@@ -68,6 +68,8 @@ body {
 
 #controls button {
   font-family: 'Press Start 2P', cursive;
+  padding: 5px;
+  cursor: pointer;
 }
 
 #status-bar {
