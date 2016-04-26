@@ -38,17 +38,21 @@ body {
 }
 
 #controls {
-  bottom: 0;
-  left: -30px;
-  padding-bottom: 200px;
   position: absolute;
-  width: 100%;
+  top: 50% !important;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: white;
+  padding: 0px;
+  display: inline-block
 }
 
 #controls ul {
   list-style-type: none;
-  margin-left: -40px;
+  padding: 0px;
   font-family: 'Audiowide', cursive;
 }
 
