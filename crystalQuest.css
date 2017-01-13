@@ -14,18 +14,34 @@ body {
 }
 
 #info {
-  position: relative;
+  position: absolute;
+  left: 0;
+  right: 0;
   color: white;
+}
+
+#info strong {
+  line-height: 23px;
 }
 
 .instructions {
   padding-left:80px;
   float: left;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
 
 .keys {
   padding-right:80px;
   float: right;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+code {
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 1px 3px;
 }
 
 #container {
