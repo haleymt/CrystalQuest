@@ -1,5 +1,6 @@
 body {
   background: black;
+  font-family: sans-serif;
 }
 
 .big-container {
@@ -25,14 +26,14 @@ body {
 }
 
 .instructions {
-  padding-left:80px;
+  padding-left:50px;
   float: left;
   padding-top: 10px;
   padding-bottom: 15px;
 }
 
 .keys {
-  padding-right:80px;
+  padding-right:50px;
   float: right;
   padding-top: 10px;
   padding-bottom: 15px;
@@ -88,8 +89,23 @@ code {
 
 #controls button {
   font-family: 'Press Start 2P', cursive;
-  padding: 5px;
+  padding: 10px;
   cursor: pointer;
+  border-radius: 3px;
+  border: none;
+  outline: none !important;
+  background: white;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#controls button:hover {
+  background: rgb(255, 204, 0);
+}
+
+#controls button:focus {
+  background: rgb(255, 223, 96);
 }
 
 #status-bar {
@@ -104,8 +120,12 @@ code {
 
 #status-bar ul {
   margin: 0;
-  padding-top: 10px;
+  padding: 0px;
   list-style-type: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #status-bar ul li {
